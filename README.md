@@ -33,8 +33,8 @@ The app features a **modular architecture**, **GraphQL** on both frontend and ba
 
 ## 📸 Screenshots
 
-
-
+<img src="/screenshots/01.jpg" alt="Main Page" width="600"/>
+<img src="/screenshots/02.jpg" alt="Main Page" width="600"/>
 ---
 
 ## 🚀 Getting Started
