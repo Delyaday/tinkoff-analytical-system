@@ -12,7 +12,7 @@ export class TinkoffApiService implements OnModuleInit, OnModuleDestroy {
     this._api = new TinkoffInvestApi({
         // enter your token here
       token:
-        't.r2A5kC9ISnc1Z2_rRQAxRasjQXbvRTDwuxQweehDf-O5LpXgRZpfAjoRsAL2xhIeCSYX_eXXvS_-oDMotiwjeQ',
+        '',
     });
   }
 
