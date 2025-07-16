@@ -1,0 +1,72 @@
+<div class="layout">
+  <aside class="sidebar">
+    <nav class="menu">
+      <a
+        class="menu-item"
+        routerLink="/dashboard"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <i class="pi pi-home"></i>
+        <span>Dashboard</span>
+      </a>
+      <a
+        class="menu-item"
+        routerLink="/market"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <i class="pi pi-building-columns"></i>
+        <span>Market Watch</span>
+      </a>
+      <a
+        class="menu-item"
+        routerLink="/stocks"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <i class="pi pi-chart-line"></i>
+        <span>Analytics</span>
+      </a>
+      <a
+        class="menu-item"
+        routerLink="/profile"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <i class="pi pi-user"></i>
+        <span>Profile</span>
+      </a>
+      <a
+        class="menu-item"
+        routerLink="/calendar"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <i class="pi pi-calendar-plus"></i>
+        <span>Calendar</span>
+      </a>
+      <a
+        class="menu-item"
+        routerLink="/wallet"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <i class="pi pi-wallet"></i>
+        <span>Financials</span>
+      </a>
+
+      <a
+        class="menu-item"
+        routerLink="/settings"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <i class="pi pi-cog"></i>
+        <span>Settings</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="content"></main>
+</div>

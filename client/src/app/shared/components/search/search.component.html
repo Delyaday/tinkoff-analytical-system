@@ -1,0 +1,11 @@
+<div class="search-container">
+  <span class="material-icons search-icon">search</span>
+  <input
+    #inputRef
+    type="text"
+    class="custom-search-input"
+    [value]="query"
+    (input)="onInputChange(inputRef.value)"
+    placeholder="Search..."
+  />
+</div>

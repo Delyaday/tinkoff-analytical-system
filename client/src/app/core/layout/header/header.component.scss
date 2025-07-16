@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+
+  .card {
+    .pi-chart-line {
+      font-size: 1.4rem;
+      color: #a3e635;
+      padding-right: 11px;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #a3e635;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .asylum {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #ffffff;
+        margin-left: -8px;
+      }
+    }
+  }
+}

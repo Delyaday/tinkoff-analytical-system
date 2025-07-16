@@ -1,0 +1,21 @@
+<div class="market-container">
+  <div class="title">
+    <h1>
+      <i class="pi pi-building-columns" style="color: #86da00"></i>
+      Market Watch
+    </h1>
+  </div>
+
+  <ng-container *ngIf="!(selectedInstrument | async); else instrumentDetails">
+    <search-component class="search-bar"></search-component>
+    <result-table class="result-table" [rowData]="result"></result-table>
+  </ng-container>
+
+  <ng-template #instrumentDetails>
+    <instrument-details
+      class="instrument-details"
+      [instrument]="selectedInstrument | async"
+      (back)="onBackToSearch()"
+    ></instrument-details>
+  </ng-template>
+</div>

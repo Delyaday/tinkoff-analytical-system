@@ -1,0 +1,16 @@
+<div class="instrument-details">
+  <button class="btn-back" (click)="back.emit()">← Back to results</button>
+  <h2>{{ instrument?.name }}</h2>
+
+  <div class="chart-container" *ngIf="hasData; else noData">
+    <highcharts-chart
+      [options]="chartOptions"
+      [constructorType]="chartConstructor"
+      style="width: 100%; height: 60vh; display: block"
+    ></highcharts-chart>
+  </div>
+
+  <ng-template #noData>
+    <p class="no-results">No data available for this instrument.</p>
+  </ng-template>
+</div>

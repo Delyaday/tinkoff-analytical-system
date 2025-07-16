@@ -1,0 +1,35 @@
+$header-height: 70px;
+$sidebar-width: 200px;
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: $header-height;
+  bottom: 0;
+  width: $sidebar-width;
+}
+
+.content {
+  z-index: 5000;
+  position: absolute;
+  left: $sidebar-width;
+  top: $header-height;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px 0px 0px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}

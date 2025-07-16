@@ -1,0 +1,38 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Instrument {
+  isin: String!
+  figi: String!
+  ticker: String!
+  classCode: String!
+  instrumentType: String!
+  name: String!
+  uid: String!
+  positionUid: String!
+  instrumentKind: Int!
+  apiTradeAvailableFlag: Boolean!
+  forIisFlag: Boolean!
+  first1minCandleDate: String
+  first1dayCandleDate: String
+  forQualInvestorFlag: Boolean!
+  weekendFlag: Boolean!
+  blockedTcaFlag: Boolean!
+  lot: Int!
+}
+
+type Candle {
+  time: String!
+  open: Float!
+  high: Float!
+  low: Float!
+  close: Float!
+  volume: Float!
+}
+
+type Query {
+  instruments(query: String!): [Instrument!]!
+  instrumentByTicker(ticker: String!): Instrument
+  candlesByFigi(figi: String!, interval: Float, fromTo: String): [Candle!]!
+}
